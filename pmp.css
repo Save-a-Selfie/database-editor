@@ -1,0 +1,145 @@
+.fadeRow { color:#999; }
+.fadeRow img { opacity:0.5; }
+.SASMap { height:150px; background:#eee; }
+.recordadd {
+    font-size: 20px;
+    color: green;
+}
+html {
+    font-family: sans-serif;
+}
+a:link{
+    color: #006AA9;
+}
+a:visited{
+    color: #666666;
+}
+a:hover{
+    color: black;
+}
+th, h2 {
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+th, td {
+    padding: 10px;}
+tr:nth-child(even) {
+    background: #CCC;}
+tr:nth-child(odd) {
+    background: #eee;}
+tr:hover {
+    background: #ccf;}
+td:hover {
+    background: #eef;}
+/* 
+input {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #454545;
+  font-size: 16px;
+  background: #ccc;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+}
+*/
+
+input:hover {
+  background: #a3a3a3;
+  text-decoration: none;
+}
+
+table {
+  width: auto;
+}
+
+.map {
+  width: 20em;
+}
+
+table img {
+  width: 100%;
+}
+
+div#greeting {
+  text-align: right;
+  color: #aaa;
+}
+
+#tableAndMap {
+  border: 1px solid #000;
+  padding: 1%;
+  overflow: auto;
+  width: 80%;
+  margin: 30px auto;
+}
+
+#modify {
+  float: left;
+  position: relative;
+  width: 30%;
+}
+
+#modifyMap {
+  float: left;
+  width: 60%;
+  margin-left: 5%;
+  background: #eee;
+  height: 400px;
+}
+
+#modifyMapNotice {
+  z-index: 99999;
+  position: absolute;
+  width: 20%;
+  color: #f33;
+  font-size: 20px;
+  padding: 10px;
+  background: #fff;
+}
+
+#changeOrRevert {
+  width: 90%;
+  margin: 60px auto;
+}
+
+#changeOrRevertText {
+  width: 15%;
+  float: left;
+  position: relative;
+  padding-left: 5%;
+}
+
+#changeOrRevertTable {
+  width: 65%;
+  float: left;
+  position: relative;
+  margin-left: 3%;
+}
+
+.revertButton {
+  float: left;
+  color: #f33;
+  margin-bottom: 50px;
+}
+
+.typeOfObject img {
+  width: 50px;
+}
+
+textarea, input {
+  width: 100%;
+  max-width: 20em;
+}
+
+table .key,
+table .latitude,
+table .longitude {
+  display: none;
+}
