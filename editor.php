@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,20 +12,19 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="map.js"></script>
 
-<link rel="stylesheet" type="text/css" href="pmp.css"/>
+<link rel="stylesheet" type="text/css" href="editor/editor.css"/>
 </head>
 <body>
 <h1>Save a Selfie info editor</h1>
 
 <?php
-include 'util.php';
-include 'preferences.php';
+include 'editor/util.php';
+include 'editor/preferences.php';
+include 'database.php';
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : 'default';
 $device = isset($_REQUEST['device']) ? $_REQUEST['device'] : null;
 $record = isset($_REQUEST['record']) ? $_REQUEST['record'] : null;
-
-session_start();
 
 if (isset($_REQUEST['access'])) {
   $_SESSION['device'] = '';
@@ -36,9 +37,10 @@ if (isset($_REQUEST['access'])) {
 if ($device != '') {
   $_SESSION['has_access'] = true;
 }
-if ($_SESSION['has_access']) {
-  $has_access = true; 
+if (!isset($_SESSION['has_access'])) {
+  $_SESSION['has_access'] = false;
 }
+$has_access = $_SESSION['has_access'];
 
 if (!$has_access) {
   echo 'Sorry, you don\'t have access to this resource.';

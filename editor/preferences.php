@@ -23,5 +23,3 @@ $imageRootURL = 'http://saveaselfie.org/wp/wp-content/themes/storedImages/';
 $token = 'full-access-password-that-needs-changing-on-deployment';
 
 $limit = 500;
-
-include 'database.php';
