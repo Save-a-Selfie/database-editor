@@ -1,54 +1,18 @@
-.fadeRow { color:#999; }
-.fadeRow img { opacity:0.5; }
-.SASMap { height:150px; background:#eee; }
-.recordadd {
-    font-size: 20px;
-    color: green;
-}
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
-a:link{
-    color: #006AA9;
+
+a:link {
+  color: #006AA9;
 }
-a:visited{
-    color: #666666;
+
+a:hover {
+  color: black;
 }
-a:hover{
-    color: black;
+
+form, th {
+  text-align: center;
 }
-th, h2 {
-    text-align: center;
-}
-form{
-    text-align: center;
-}
-th, td {
-    padding: 10px;}
-tr:nth-child(even) {
-    background: #CCC;}
-tr:nth-child(odd) {
-    background: #eee;}
-tr:hover {
-    background: #ccf;}
-td:hover {
-    background: #eef;}
-/* 
-input {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
-  font-family: Arial;
-  color: #454545;
-  font-size: 16px;
-  background: #ccc;
-  padding: 5px 15px 5px 15px;
-  text-decoration: none;
-}
-*/
 
 input:hover {
   background: #a3a3a3;
@@ -59,17 +23,45 @@ table {
   width: auto;
 }
 
+th, td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #ccc;
+}
+
+tr:nth-child(odd) {
+  background: #eee;
+}
+
+tr:hover {
+  background: #ccf;
+}
+
+td:hover {
+  background: #eef;
+}
+
+.fadeRow {
+  color:#999;
+}
+
+.fadeRow img {
+  opacity:0.5;
+}
+
+.SASMap {
+  height:150px;
+  background:#eee;
+}
+
 .map {
   width: 20em;
 }
 
 table img {
   width: 100%;
-}
-
-div#greeting {
-  text-align: right;
-  color: #aaa;
 }
 
 #tableAndMap {
@@ -102,31 +94,6 @@ div#greeting {
   font-size: 20px;
   padding: 10px;
   background: #fff;
-}
-
-#changeOrRevert {
-  width: 90%;
-  margin: 60px auto;
-}
-
-#changeOrRevertText {
-  width: 15%;
-  float: left;
-  position: relative;
-  padding-left: 5%;
-}
-
-#changeOrRevertTable {
-  width: 65%;
-  float: left;
-  position: relative;
-  margin-left: 3%;
-}
-
-.revertButton {
-  float: left;
-  color: #f33;
-  margin-bottom: 50px;
 }
 
 .typeOfObject img {
